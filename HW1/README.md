@@ -2,9 +2,8 @@
 
 ### The results shown in Figure 2.3 should be quite reliable because they are averages over 2000 individual, randomly chosen 10-armed bandit tasks. Why, then, are there oscillations and spikes in the early part of the curve for the optimistic method? In other words, what might make this method perform particularly better or worse, on average, on particular early steps?
 
-![fig23_sta](/Users/vduddu/Desktop/Semester/RL/RL-M2018/HW1/Figures/fig23_sta.png)
 
-
+https://github.com/vduddu/RL-M2018/blob/master/HW1/Figures/fig23_sta.png
 
 
 The intitial spike is because of the optimisitic q() values that were assigned for each of the bandits. Since, in the simulation, we give the initial optimistic value of 5, the optimisim of the agent to achieve the optimal bandit arm results in the spike. 
@@ -17,7 +16,7 @@ The optimisitc intital values allows a opportunity to try all the arms out. Henc
 
 #### Nonstationary
 
-![fig23_nonsta](/Users/vduddu/Desktop/Semester/RL/RL-M2018/HW1/Figures/fig23_nonsta.png)
+https://github.com/vduddu/RL-M2018/blob/master/HW1/Figures/fig23_nonsta.png
 
 
 
@@ -31,11 +30,11 @@ On repeating the exercise with changing values of the true q values, the agents 
 
 ### Stationary
 
-![compare_stationary](/Users/vduddu/Desktop/Semester/RL/RL-M2018/HW1/Figures/compare_stationary.png)
+https://github.com/vduddu/RL-M2018/blob/master/HW1/Figures/compare_stationary.png
 
 ### Non Stationary
 
-![compare_nonstationary](/Users/vduddu/Desktop/Semester/RL/RL-M2018/HW1/Figures/compare_nonstationary.png)
+https://github.com/vduddu/RL-M2018/blob/master/HW1/Figures/compare_nonstationary.png
 
 UCB seems to outperform both Optimistic apprach and the E Greedy appooach for both the stationary and non-stationary cases. UCB gives weightage to all the actions that have been previously unexplored and as a result, it shows a higher % of finding the optimal action. Optimal approach is also quite close to the UCB approach but however, eGreedy does not perform well and takes a lot of iterations to achieve the performance of UCB or optimal value approach.
 
@@ -43,9 +42,9 @@ UCB seems to outperform both Optimistic apprach and the E Greedy appooach for bo
 
 ### Excercise 2.5: Why does Averaging Techniques not work well in Non-Stationary situations?
 
-![avg1](/Users/vduddu/Desktop/Semester/RL/RL-M2018/HW1/Figures/avg1.png)
+https://github.com/vduddu/RL-M2018/blob/master/HW1/Figures/avg1.png
 
-![avg2](/Users/vduddu/Desktop/Semester/RL/RL-M2018/HW1/Figures/avg2.png)
+https://github.com/vduddu/RL-M2018/blob/master/HW1/Figures/avg2.png
 
 In non-stationary conditions, the true estimates and the probability distrbution for receiving a particular reward are varying. In such a situation, the latest past rewards are important as compared to older rewards. This however, is not captured by aversaging methods like sample average. As a result we see in the graphs that the performance of the sample averaging is not as good as incremental approach with constant step size. Incremental apporach with constant step size gives more weightage to recent rewards compared to older rewards, due to which its performance improves significantly better than averaging techniques.
 
@@ -53,7 +52,7 @@ In non-stationary conditions, the true estimates and the probability distrbution
 
 ### Excercise 2.7: Performance Analysis of Cnstant step size q() estimation in Non-Stationary Conditions
 
-![ex27](/Users/vduddu/Desktop/Semester/RL/RL-M2018/HW1/Figures/ex27.png)
+https://github.com/vduddu/RL-M2018/blob/master/HW1/Figures/ex27.png
 
 
 
